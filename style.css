@@ -14,10 +14,45 @@
   --background: #fdf8f2;
   --primary: #c2bab6;
   --secondary: #d3db7b;
+  --border-radius: 0.25rem;
+  --border-width: 1px;
 }
 
 body {
   font-family: var(--font);
   background: var(--background);
+}
 
+ul {
+  list-style: none;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 2%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 1rem;
+}
+
+.header-container {
+  border: 2px solid red;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.nav-container  {
+  border: 2px solid blue;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.main-content {
+  height: calc(2fr + 1rem);
+  border: 2px solid lime;
+}
+
+.aside-container {
+  border: 2px solid purple;
 }
