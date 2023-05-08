@@ -10,22 +10,32 @@
 <body>
 
   <div class="container">
-    <header class="header-container">
-      <form class="search-form" action="/search" method="get">
-        <input type="text" name="q" placeholder="Search...">
-        <button type="submit">Search</button>
+
+    <header class="header__container">
+      <form class="search__form" action="/search" method="get">
+        <input class="search--bar" type="text" name="search" placeholder="Search...">
+        <button class="search--btn" type="submit" aria-label="Search">Search</button>
       </form>
-      <h3>Welcome!</h3>
-      <div class="btn-container">
-        <button>button 1</button>
-        <button>button 2</button>
-        <button>button 3</button>
+      <div class="welcome__msg">
+        <h3 class="header--h3">Good morning,</h3>
+        <p>Sergio!</p>
+      </div>
+      <div class="btn__container">
+        <button class="header__btn">New</button>
+        <button class="header__btn">Upload</button>
+        <button class="header__btn">Share</button>
+      </div>
+      <div class="profile__container">
+        <img class="profile--photo" src="img/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt="profile photo of user">
+        <p class="user--name">Sergio Bianchi</p>
+        <p class="job--title">Head of Marketing</p>
       </div>
     </header>
-    <nav class="nav-container">
-      <nav class="nav-menu">
-        <div class="logo-container"></div>
-        <h2>Dashboard</h2>
+
+    <nav class="nav__container">
+      <nav class="nav__menu">
+        <div class="logo__container"></div>
+        <h2 class="nav--h2">Dashboard</h2>
         <ul>
           <li><a href="#" class="home">Home</a></li>
           <li><a href="#" class="messages">Messages</a></li>
@@ -37,8 +47,9 @@
         </ul>
       </nav>
     </nav>
-    <main class="main-content">
-      <div class="card-container">
+
+    <main class="main__content">
+      <div class="card__container">
         <div class="card">
           <div class="card-body">
             <h3 class="card-title">Task 1</h3>
@@ -82,7 +93,8 @@
           </div>
         </div>
       </div>
-      <aside class="aside-container">
+
+      <aside class="aside__container">
         <div class="productivity">
           <div class="card-body">
             <h3 class="card-title">Productivity</h3>
@@ -96,9 +108,12 @@
               <a href="#" class="btn">Learn more</a>
             </div>
       </aside>
+
     </main>
-    <footer class="footer-container">
+
+    <footer class="footer__container">
     </footer>
+
   </div>
   
 </body>
