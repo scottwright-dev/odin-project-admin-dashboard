@@ -71,7 +71,7 @@ ul {
   grid-template-rows: 1fr 1fr;
 }
 
-.search--bar {
+.search__bar {
   background-color: var(--background);
   padding: 0.550rem;
   border: none;
@@ -79,15 +79,15 @@ ul {
   width: 98%;
 }
 
-.search--bar:hover {
+.search__bar:hover {
   border-color: var(--text-color);
 }
 
-.search--bar:focus {
+.search__bar:focus {
   outline-color: var(--color);
 } 
 
-.search--btn {
+.search__btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -96,7 +96,7 @@ ul {
   font-size: 0;
 }
 
-.search--btn::before {
+.search__btn::before {
   content: "";
   display: block;
   width: 2.5rem;
@@ -107,7 +107,7 @@ ul {
   filter: var(--svg-color);
 }
 
-.search--btn:hover::before {
+.search__btn:hover::before {
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
@@ -146,7 +146,7 @@ ul {
   align-self: center;
 }
 
-.header--h3 {
+.header__h3 {
   font-size: 2.5rem;
 }
 
@@ -195,14 +195,14 @@ ul {
   justify-items: center;
 }
 
-.nav--h2 {
+.nav__h2 {
   font-size: 2rem;
   grid-row: 1;
   align-self: center;
   margin-top: 3rem;
 }
 
-.nav--item {
+.nav__item {
   font-size: 1.5rem;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -210,7 +210,7 @@ ul {
   margin-bottom: 2rem;
 }
 
-.nav--item::before {
+.nav__item::before {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -219,43 +219,43 @@ ul {
   margin-right: 1rem; 
 }
 
-.nav--item.home::before {
+.nav__item.home::before {
   background-image: url("img/icons/home-outline.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.nav--item.messages::before {
+.nav__item.messages::before {
   background-image: url("img/icons/chatbox-outline.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.nav--item.history::before {
+.nav__item.history::before {
   background-image: url("img/icons/time-outline.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.nav--item.tasks::before {
+.nav__item.tasks::before {
   background-image: url("img/icons/file-tray-stacked-outline.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.nav--item.settings::before {
+.nav__item.settings::before {
   background-image: url("img/icons/settings-outline.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.nav--item.support::before {
+.nav__item.support::before {
   background-image: url("img/icons/information-circle-outline.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.nav--item.logout::before {
+.nav__item.logout::before {
   background-image: url("img/icons/exit-outline.svg");
   background-size: contain;
   background-repeat: no-repeat;
