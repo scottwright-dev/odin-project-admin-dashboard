@@ -138,13 +138,18 @@ ul {
 }
 
 .welcome__msg {
-  font-size: 2rem;
   color: var(--text-color);
+  font-size: 2rem;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   padding-left: 3rem;
   align-self: center;
 }
+
+.header--h3 {
+  font-size: 2.5rem;
+}
+
 
 /* --- BTN STYLING --- */
 
@@ -178,17 +183,84 @@ ul {
 .nav__container  {
   background: var(--primary);
   border-radius: var(--border-radius);
+  border: var(--border);
   grid-column: 1 / 2;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+.nav__menu {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
 }
 
 .nav--h2 {
   font-size: 2rem;
-  grid-row: 2 / 3;
+  grid-row: 1;
+  align-self: center;
+  margin-top: 3rem;
 }
+
+.nav--item {
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nav--item::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  filter: var(--svg-color);
+  margin-right: 1rem; 
+}
+
+.nav--item.home::before {
+  background-image: url("img/icons/home-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav--item.messages::before {
+  background-image: url("img/icons/chatbox-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav--item.history::before {
+  background-image: url("img/icons/time-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav--item.tasks::before {
+  background-image: url("img/icons/file-tray-stacked-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav--item.settings::before {
+  background-image: url("img/icons/settings-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav--item.support::before {
+  background-image: url("img/icons/information-circle-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.nav--item.logout::before {
+  background-image: url("img/icons/exit-outline.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 /* --- MAIN CONTENT ---*/
 
