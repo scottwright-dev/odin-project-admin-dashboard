@@ -134,6 +134,7 @@ img {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: var(--border);
+
 }
 
 .user--name {
@@ -419,6 +420,11 @@ img {
   
   .main__content {
     grid-template-columns: 1fr;
+  }
+
+  .nav__item:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
   }
 
   .card__container {
